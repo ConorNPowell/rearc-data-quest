@@ -12,4 +12,6 @@
 #### Contains the jupyter notebook report that answers all of the data analysis realted questions.
 
 ### Part 4 Folder
-#### All that automation stuff
+#### I ended up having to do this manually as I was battling some demons locally with Terraform and my local enviroments. I first started by creating an S3 event notication tied to the bucket where we are dumpign data that would dump notications into an SQS queue. After that I imported a custom layer into Lambda. Created a function within lambda to run Part 1 and Part 2 and attached it to a CRON job to run once daily. After that I created another lambda function to run the report script tied to the aforementioned SQS queue so that the report is only run with new data.
+
+#### I have attached some images within the Part 4 folder for proof
