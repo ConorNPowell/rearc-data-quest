@@ -1,5 +1,6 @@
 # rearc-data-quest
 ## By Conor Powell
+##### Additional documentation provide by in-comment code and logging within script
 
 ### Part 1 Folder
 #### Includes the source code for the script used in order to populate an S3 bucket with data from the BLS Website. The script works by pulling in the avaiable data on the website, checks for changes in the data by comparing last modified dates in S3 versus whats given on the BLS website, uploads only new data, and then delete any files that are no longer found on the BLS Website. All the files are dropped into one singular folder and not further organized.
@@ -9,3 +10,6 @@
 
 ### Part 3 Folder
 #### Contains the jupyter notebook report that answers all of the data analysis realted questions.
+
+### Part 4 Folder
+#### All that automation stuff
